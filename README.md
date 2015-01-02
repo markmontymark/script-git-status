@@ -16,17 +16,14 @@ sudo cp git-status.sh /usr/local/bin
 
 ## usage
 
-
 ```sh
 $ cd $HOME/git
 $ git-status.sh
-```
-```html
-<p style='color:green'>node-scrape-html</p>
-<p style='color:red'>patterns</p>
-<p style='color:red'>M README.md</p>
-<p style='color:blue'>./proxy</p>
-<p style='color:green'>nscript-git-status</p>
+node-scrape-html
+patterns
+M README.md
+./proxy
+script-git-status
 ```
 
 ## color meanings
