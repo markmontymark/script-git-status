@@ -1,8 +1,8 @@
 #!/bin/bash
 
-## green means no uncommited changes
+## green means no uncommited changes -- you're good
 ## yellow means staged but not committed changes
-## red means no staged changes
+## red means changes exist, nut no staged changes yet
 ## blue means not a git repo
 
 textreset=$(tput sgr0) # reset the foreground colour
@@ -29,7 +29,7 @@ for checkdir in $checkdirs ; do
 				echo "${red}$dir${textreset}"
 				for l in $lines ; do
 					if [ ${#l} -lt 3 ] ; then
-						printf "$l "
+						printf %s "$l "
 					else
 						echo $l
 					fi
