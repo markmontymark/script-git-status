@@ -19,20 +19,20 @@ sudo cp git-status.sh /usr/local/bin
 ```sh
 $ cd $HOME/git
 $ git-status.sh
-node-scrape-html
-patterns
-./proxy
-script-git-status
+Clean  node-scrape-html
+patterns 1
+NO git ./proxy
+Clean  script-git-status
 ```
 For detailed view
 ````sh
 $ cd $HOME/git
 $ git-status.sh -d
-node-scrape-html
-patterns
+Clean  node-scrape-html
+Dirty  patterns 1 files dirty
 M README.md
-./proxy
-script-git-status
+NO git ./proxy
+Clean  script-git-status
 ````
 
 ## color meanings
