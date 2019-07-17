@@ -47,7 +47,7 @@ for checkdir in $checkdirs ; do
 			if [ ${#lines[@]} -lt 2 -a "$lines" == "" ] ; then
 				echo "${green}Clean  $dir${textreset}"
 			else
-				echo "${red}Dirty  $dir${textreset}"
+				echo "${red}Dirty  $dir${textreset} $(git status --porcelain | wc -l) files dirty"
 
 				if [[ $DETAILED == "True" ]]; then
 				for l in $lines ; do
