@@ -20,8 +20,8 @@ sudo cp git-status.sh /usr/local/bin
 $ cd $HOME/git
 $ git-status.sh
 Clean  node-scrape-html
-patterns 1
-NO git ./proxy
+Dirty  patterns 1
+NO git proxy
 Clean  script-git-status
 ```
 For detailed view
@@ -31,7 +31,7 @@ $ git-status.sh -d
 Clean  node-scrape-html
 Dirty  patterns 1 files dirty
 M README.md
-NO git ./proxy
+NO git proxy
 Clean  script-git-status
 ````
 
