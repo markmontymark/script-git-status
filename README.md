@@ -19,16 +19,24 @@ sudo cp git-status.sh /usr/local/bin
 ```sh
 $ cd $HOME/git
 $ git-status.sh
-node-scrape-html
-patterns
-M README.md
-./proxy
-script-git-status
+Clean  node-scrape-html
+Dirty  patterns 1
+NO git proxy
+Clean  script-git-status
 ```
+For detailed view
+````sh
+$ cd $HOME/git
+$ git-status.sh -d
+Clean  node-scrape-html
+Dirty  patterns 1 files dirty
+M README.md
+NO git proxy
+Clean  script-git-status
+````
 
 ## color meanings
 
 - green - clean status, no changes to stage, commit or push
 - red - dirty status, you have changes to stage, commit or push
 - blue - no .git/ directory found, so not a git repo
-
